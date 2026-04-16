@@ -29,7 +29,7 @@ def serialize_message(msg: Message) -> dict:
         "file_url": msg.file_url,
         "file_name": msg.file_name,
         "file_type": msg.file_type,
-        "created_at": msg.created_at.isoformat(),
+        "created_at": msg.created_at.isoformat() + "Z",
     }
 
 
