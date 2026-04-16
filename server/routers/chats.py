@@ -42,7 +42,7 @@ def serialize_chat(chat: Chat, db: Session) -> dict:
             "file_name": last_msg.file_name,
             "sender_id": last_msg.sender_id,
             "sender_username": last_msg.sender.username,
-            "created_at": last_msg.created_at.isoformat(),
+            "created_at": last_msg.created_at.isoformat() + "Z",
         }
     return {
         "id": chat.id,
