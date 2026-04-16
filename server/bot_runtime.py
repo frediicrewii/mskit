@@ -59,7 +59,7 @@ async def _send_bot_message(db: Session, chat_id: int, bot: User, text: str):
         "file_url": None,
         "file_name": None,
         "file_type": None,
-        "created_at": msg.created_at.isoformat(),
+        "created_at": msg.created_at.isoformat() + "Z",
     }
     member_ids = [m.user_id for m in db.query(ChatMember).filter(ChatMember.chat_id == chat_id).all()]
     await manager.broadcast_to_users(
