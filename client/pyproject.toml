@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mskit"
+version = "1.0.0"
+description = "mskit — terminal messenger client"
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.27",
+    "websocket-client>=1.7",
+    "prompt_toolkit>=3.0.43",
+]
+
+[project.scripts]
+mskit = "mskit.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mskit*"]

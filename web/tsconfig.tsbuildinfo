@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/components/AuthScreen.tsx","./src/components/ChatView.tsx","./src/components/Modals.tsx","./src/components/Sidebar.tsx","./src/services/api.ts","./src/services/channel.ts","./src/services/utils.ts"],"checkPending":true,"version":"5.9.3"}
